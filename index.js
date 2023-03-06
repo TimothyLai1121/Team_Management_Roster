@@ -164,17 +164,20 @@ function generateHTML(team) {
         icon = 'fa-user-graduate';
       }
       return `
-        <div class="card">
-          <div class="card-header">
-            <h2>${employee.name}</h2>
-            <h3><i class="fas ${icon}"></i> ${employee.getRole()}</h3>
-          </div>
-          <div class="card-body">
-            <p>ID: ${employee.id}</p>
-            <p>Email: <a href="mailto:${employee.email}">${employee.email}</a></p>
-            ${employee.officeNumber ? `<p>Office: ${employee.officeNumber}</p>` : ''}
-          </div>
-        </div>
+      <div class="card">
+  <div class="card-header">
+    <i class="fas ${icon}"></i>
+    <h2>${employee.name}</h2>
+    
+  </div>
+  <div class="card-body">
+    <h2>${employee.getRole()}</h2>
+    <p><i class="fa-regular fa-id-badge"></i>${employee.id}</p>
+    <p><i class="fa-regular fa-paper-plane"></i><a href="mailto:${employee.email}">${employee.email}</a></p>
+    ${employee.officeNumber ? `<p><i class="fa-solid fa-map-location-dot"></i>${employee.officeNumber}</p>` : ''}
+  </div>
+</div>
+
       `;
     });
   
@@ -200,10 +203,13 @@ function generateHTML(team) {
               </div>
             </div>
           </main>
+          <script src="./script.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         </body>
       </html>
     `;
     
+
     const filename = "./dist/team.html";
     fs.writeFileSync(filename, html);
     console.log(`Team profile generated successfully at ${filename}!`);
@@ -214,7 +220,7 @@ function generateHTML(team) {
     };
   }
   
-
+ 
 
   module.exports = generateHTML;
   

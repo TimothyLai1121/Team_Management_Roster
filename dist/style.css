@@ -1,83 +1,91 @@
 body {
-    background-color: #f2f2f2;
-  }
-  
-  header {
-    text-align: center;
-    padding: 30px;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #cccccc;
-    margin: 30px;
-    width: 300px;
-    height: 400px;
-    float: left;
-    overflow: hidden;
-    animation: card-entry 1s ease-out;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px #cccccc;
-  }
-  
-  .card-header h2 {
-    font-size: 36px;
-  }
-  
-  .card-header h3 {
-    font-size: 24px;
-  }
-  
-  .card-body p {
-    font-size: 16px;
-  }
-  
-  .card-body a:hover {
-    color: #0077c9;
-    text-decoration: underline;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  
-  @keyframes card-entry {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .card-header {
-    background-color: #0077c9;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .card-header h2 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .card-header h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-body p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .card-body a {
-    color: #0077c9;
-  }
-  
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px #ccc;
+  margin-bottom: 25px;
+  width: 250px;
+  height: 220px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 12px #ccc;
+  transform: translateY(-10px);
+}
+
+.card-header {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.card-header i {
+  font-size: 40px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  position: relative;
+  top: 20px;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+
+}
+
+.card-body i {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card-body h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.card-body a {
+  color: #333;
+  text-decoration: none;
+}
+
+.fa-regular {
+  color: #999;
+  margin-right: 5px;
+}
+
+.fa-solid {
+  color: #333;
+  margin-right: 5px;
+}
