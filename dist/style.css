@@ -1,10 +1,14 @@
 body {
+<<<<<<< HEAD
   background-color: #D8F8B7;
+=======
+>>>>>>> 664ae31dfad93223a845123e0042639684c8b1ef
   font-family: Arial, sans-serif;
 }
 
 header {
   text-align: center;
+<<<<<<< HEAD
   padding: 30px;
   background-color: #3D6271;
   color: #ffffff;
@@ -81,10 +85,54 @@ header h1 {
   color: #ffffff;
   padding: 20px;
   text-align: center;
+=======
+  margin-bottom: 50px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px #ccc;
+  margin-bottom: 25px;
+  width: 250px;
+  height: 220px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 12px #ccc;
+  transform: translateY(-10px);
+}
+
+.card-header {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.card-header i {
+  font-size: 40px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+>>>>>>> 664ae31dfad93223a845123e0042639684c8b1ef
 }
 
 .card-header h2 {
   margin: 0;
+<<<<<<< HEAD
   font-size: 24px;
 }
 
@@ -95,13 +143,53 @@ header h1 {
 
 .card-body {
   padding: 20px;
+=======
+  font-size: 1.5em;
+  position: relative;
+  top: 20px;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+
+}
+
+.card-body i {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card-body h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+>>>>>>> 664ae31dfad93223a845123e0042639684c8b1ef
 }
 
 .card-body p {
   margin: 0;
+<<<<<<< HEAD
   font-size: 14px;
 }
 
 .card-body a {
   color: #3D6271;
+=======
+  font-size: 0.9em;
+}
+
+.card-body a {
+  color: #333;
+  text-decoration: none;
+}
+
+.fa-regular {
+  color: #999;
+  margin-right: 5px;
+}
+
+.fa-solid {
+  color: #333;
+  margin-right: 5px;
+>>>>>>> 664ae31dfad93223a845123e0042639684c8b1ef
 }
